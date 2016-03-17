@@ -1,5 +1,16 @@
+# aws
+#
+# AWS client
+#
+#   docker run -it --rm \
+#     -v $HOME/.aws:/root/.aws \
+#     --log-driver none \
+#     --name awscli \
+#     draco1114/aws "$@"
+#
+#
 FROM alpine:latest
-MAINTAINER Michael Thomas <michael.thomas@salesforce.com>
+MAINTAINER Michael Thomas <draco1114@gmail.com>
 
 RUN apk update && apk add \
   ca-certificates \
