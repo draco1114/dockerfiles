@@ -1,7 +1,7 @@
 # blobxfer
 #
 # Microsoft tool for blob transfer to and from Azure.
-# 
+#
 #     docker run -it --rm \
 #       -v $(pwd)/blobdata:/blobdata \
 #       -w /blobdata \
@@ -14,6 +14,6 @@ RUN apt-get update -qq && \
     apt-get install -qqy --no-install-recommends ca-certificates && \
     apt-get clean all && \
     pip install --upgrade pip -q && \
-    pip install blobxfer -q 
+    pip install blobxfer -q
 
 ENTRYPOINT [ "blobxfer" ]
